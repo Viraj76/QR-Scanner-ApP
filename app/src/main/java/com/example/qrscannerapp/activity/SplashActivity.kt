@@ -1,4 +1,4 @@
-package com.example.qrscannerapp
+package com.example.qrscannerapp.activity
 
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -13,7 +13,8 @@ import android.view.WindowInsets
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
-import java.nio.channels.InterruptedByTimeoutException
+import com.example.qrscannerapp.R
+import com.example.qrscannerapp.ui.activity.MainActivity
 
 class SplashActivity : AppCompatActivity() {
 
@@ -25,14 +26,11 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
         hidingActionAndStatusBar()
-
         Handler(Looper.getMainLooper()).postDelayed({
             checkForPermission()
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
             finish()
         },1000)
-
-
     }
 
     private fun checkForPermission() {

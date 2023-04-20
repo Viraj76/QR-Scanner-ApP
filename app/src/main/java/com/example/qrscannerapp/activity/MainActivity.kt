@@ -1,7 +1,8 @@
-package com.example.qrscannerapp
+package com.example.qrscannerapp.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.qrscannerapp.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
