@@ -14,7 +14,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
 import com.example.qrscannerapp.R
-import com.example.qrscannerapp.ui.activity.MainActivity
+
 
 class SplashActivity : AppCompatActivity() {
 

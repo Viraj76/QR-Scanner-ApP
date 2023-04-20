@@ -3,12 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_bar"
-    app:startDestination="@id/homerFragment">
+    app:startDestination="@id/homeFragment">
 
-    <fragment
-        android:id="@+id/homerFragment"
-        android:name="com.example.qrscannerapp.fragment.HomerFragment"
-        android:label="HomerFragment" />
     <fragment
         android:id="@+id/favoriteFragment"
         android:name="com.example.qrscannerapp.fragment.FavoriteFragment"
@@ -19,4 +15,9 @@
         android:name="com.example.qrscannerapp.fragment.HistoryFragment"
         android:label="fragment_history"
         tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.qrscannerapp.HomeFragment"
+        android:label="fragment_home2"
+        tools:layout="@layout/fragment_home" />
 </navigation>
