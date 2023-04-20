@@ -38,8 +38,14 @@ class SplashActivity : AppCompatActivity() {
         if(requestCode == CAMERA_PERMISSION_REQUEST_CODE){
             if(grantResults.isNotEmpty() && grantResults[0]==PackageManager.PERMISSION_GRANTED){
                 goToMainActivity()
-            } else if(isUserPermissio)
+            } else if(isUserPermanentlyDenied()){
+
+            }
         }
+    }
+
+    private fun isUserPermanentlyDenied(): Boolean {
+
     }
 
     private fun goToMainActivity() {
